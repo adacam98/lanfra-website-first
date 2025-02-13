@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/LANFRA/script.js" defer></script>
+    <link rel="stylesheet" href="/LANFRA/style.css" />
+    <title>Event Registration | LANFRA</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <h1 class="org-name"><a href="index.html">LANFRA</a></h1>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="events.html">Events</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="membership.html">Membership</a></li>
+        </ul>
+      </nav>
+      <section id="hero" class="hero-section">
+        <div class="container hero-content">
+          <h2 id="heroTitle">LANFRA's Beautiful photos Gallery</h2>
+          <p id="heroText">To glance at more of it...you can click the button just below</p>
+          <a href="gallery.html" class="btn btn-primary">Our gallery</a>
+        </div>
+        <button class="btn-arrow-left btn-arrow" id="prevBtn">←</button>
+        <button class="btn-arrow-right btn-arrow" id="nextBtn">→</button>
+      </section>
+    </header>
+
+    <div class="container">
+      <main class="main-sections">
+        <!-- Event Registration Section -->
+        <section id="event-registration" class="event-registration-section">
+          <h2>Register for the Event</h2>
+          <p>
+            Please fill in the form below to secure your spot for the event.
+          </p>
+
+          <form class="event-registration-form" action="submit-form.php" method="POST">
+            <!-- Full Name -->
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" required />
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <!-- Phone -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <!-- Event Selection -->
+            <label for="event">Select Event</label>
+            <select class="select-event-registration" id="event" name="event" required>
+              <option value="meet-greet">Community Meet & Greet</option>
+              <option value="independence">Independence Day Celebration</option>
+              <option value="fraternity">Fraternity Party</option>
+              <option value="other">Others</option>
+            </select>
+
+            <!-- Additional Message -->
+            <label for="message">Additional Message (Optional)</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Register Now</button>
+          </form>
+        </section>
+
+        <article id="goal" class="shared-section">
+          <div class="shared-content">
+            <!-- Logo and Organization Name -->
+
+            <h2>Liberian Association in Normandie France</h2>
+            <p>
+              <span class="highlight highlight-primary"
+                >Building a stronger community together</span
+              >
+            </p>
+          </div>
+        </article>
+
+        <!-- Quick Link -->
+
+        <div class="quick-link-wrapper">
+          <nav class="footer-links">
+            <div><h3>Quick links</h3></div>
+            <ul class="footer-quick-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="membership.html">Membership</a></li>
+            </ul>
+          </nav>
+
+          <!-- Newsletter Subscription Form -->
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-content">
+              <h3>Subscribe to Our Newsletter</h3>
+              <p>Stay updated with our latest events and news.</p>
+            </div>
+
+            <form class="form-group" action="news" id="newsletterForm">
+              <input
+                type="email"
+                id="Newsletter-email"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit" class="btn btn-tertiary">Subscribe</button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <address class="footer-contact">
+              <p>Email: info@liberianassociationnormandie.org</p>
+              <p>Phone: +33 123456789</p>
+              <p>Address: 12 Rue de la Liberté, Evreux, Normandie, France</p>
+            </address>
+          </div>
+
+          <ul class="social-media-logo-wrapper">
+            <li class="social-media-logo">
+              <a href="https://www.instagram.com/"
+                ><img src="images/instagram.svg" alt="instagram logo"
+              /></a>
+            </li>
+
+            <li class="social-media-logo">
+              <a href="https://www.facebook.com/"
+                ><img src="images/facebook.svg" alt="facebook logo"
+              /></a>
+            </li>
+
+            <li class="social-media-logo">
+              <a href="https://www.tiktok.com/"
+                ><img src="images/tiktok.svg" alt="tiktok logo"
+              /></a>
+            </li>
+
+            <li class="social-media-logo">
+              <a href="https://www.linkedin.com/"
+                ><img src="images/linkedin.svg" alt="linkedin logo"
+              /></a>
+            </li>
+
+            <li class="social-media-logo">
+              <a href="https://www.youtube.com/"
+                ><img src="images/youtube.svg" alt="youtube"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="motto-wrapper">
+        <p>
+          <span>Liberia's Motto</span> : The love of liberty brought us here.
+        </p>
+        <p><span>LANFRA's Motto</span>: Together we can do better.</p>
+        <p>
+          &copy; 2025 Liberian Association in Normandie - France. All Rights
+          Reserved.
+        </p>
+        <button id="backToTopBtn" class="back-to-top" aria-label="Back to Top">
+          ↑
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
